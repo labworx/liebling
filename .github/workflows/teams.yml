@@ -5,12 +5,12 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      uses: aliencube/microsoft-teams-actions@v0.8.0
-      with:
-        webhook_uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
-        title: blog.entidia.net deployes
-        summary: New Theme Deployment for blog.entidia.net
-        text: A new Themeversion has been deployed to blog.entidia.net
-        theme_color: #96c300
-        sections: '[{ "activityTitle": "hello world" }]'
-        actions: '[{ "@type": "OpenUri", "name": "Visit Vlog", "targets": [{ "os": "default", "uri": "https://blog.entidia.net" }] }]'
+      - uses: aliencube/microsoft-teams-actions@v0.8.0
+        with:
+          webhook_uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          title: blog.entidia.net deployes
+          summary: New Theme Deployment for blog.entidia.net
+          text: A new Themeversion has been deployed to blog.entidia.net
+          theme_color: "#96c300"
+          sections: '[{ "activityTitle": "hello world" }]'
+          actions: '[{ "@type": "OpenUri", "name": "Visit Vlog", "targets": [{ "os": "default", "uri": "https://blog.entidia.net" }] }]'
