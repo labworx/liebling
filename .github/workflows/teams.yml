@@ -1,10 +1,10 @@
-name: Teams notify
+name: MS Teams notify
 on: [push]
 
-deploy:
+jobs:
+  deploy:
     runs-on: ubuntu-18.04
-
-    jobs:
+    steps:
       name: Send a message to Microsoft Teams
       uses: aliencube/microsoft-teams-actions@v0.8.0
       with:
