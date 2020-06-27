@@ -1,5 +1,5 @@
 name: Deploy Theme
-on: [push]
+on: [pull_request]
 
 jobs:
   deploy:
