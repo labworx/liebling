@@ -1,0 +1,9 @@
+{{#get "tags" limit="all"}}
+    <ul class="tags">
+        {{#foreach tags}}
+            <li>
+                <a href="{{url}}">{{name}}</a>
+            </li>
+        {{/foreach}}
+    </ul>
+{{/get}}
